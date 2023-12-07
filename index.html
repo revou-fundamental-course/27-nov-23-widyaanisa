@@ -1,36 +1,47 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title> Menghitung Keliling & Luas Segitiga </title>
-    </head>
-    <body>
-        <h1> Menghitung Keliling & Luas Segitiga </h1> <!--membuat judul-->
-        <p> Silahkan klik button untuk menghitung keliling dan luas segitiga</p>
-        
-        <button onclick="myFunctionK()">Menghitung Keliling</button> <!--button untuk menghitung keliling-->
 
-        <button onclick="myFunctionL()">Menghitung Luas</button> <!--button untuk menghitung luas-->
-        
-        <script>
-            let K,L; 
-            set = 0.5;
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title> Menghitung Keliling & Luas Segitiga </title>
+</head>
 
-            function myFunctionK() {    
-            s1 = window.prompt ('Silahkan masukkan nilai sisi 1:', 0);
-            s2 = window.prompt ('Silahkan masukkan nilai sisi 2:', 0);
-            s3 = window.prompt ('Silahkan masukkan nilai sisi 3:', 0);
-            K = parseInt(s1)+parseInt(s2)+parseInt(s3);
-            window.alert('Nilai keliling segitiga ' + K );
-            }
+<body>
+   <header>
+        <h1> Menghitung Keliling & Luas Segitiga </h1>
+   </header>
+    <!--membuat judul-->
+    <img src="segitiga.jpg"  alt="Segitiga" width="350" height="300">
+<article>
+    <p> Silahkan klik button untuk menghitung keliling dan luas segitiga</p>
 
-            function myFunctionL() {    
-            alas = window.prompt ('Silahkan masukkan nilai alas:', 0);
-            tinggi = window.prompt ('Silahkan masukkan nilai tinggi:', 0);
+    <button onclick="myFunctionK()">Menghitung Keliling</button>
+    <!--button untuk menghitung keliling-->
+
+    <button onclick="myFunctionL()">Menghitung Luas</button>
+    <!--button untuk menghitung luas-->
+</article>
+    <script>
+        let K, L;
+        set = 0.5;
+
+        function myFunctionK() {
+            s1 = window.prompt('Silahkan masukkan nilai sisi 1:', 0);
+            s2 = window.prompt('Silahkan masukkan nilai sisi 2:', 0);
+            s3 = window.prompt('Silahkan masukkan nilai sisi 3:', 0);
+            K = parseInt(s1) + parseInt(s2) + parseInt(s3);
+            window.alert('Nilai keliling segitiga ' + K);
+        }
+
+        function myFunctionL() {
+            alas = window.prompt('Silahkan masukkan nilai alas:', 0);
+            tinggi = window.prompt('Silahkan masukkan nilai tinggi:', 0);
             L = set * alas * tinggi;
-            window.alert('Nilai luas segitiga ' + L );
-            }
-        </script>
-    </body>
+            window.alert('Nilai luas segitiga ' + L);
+        }
+    </script>
+</body>
+
 </html>
